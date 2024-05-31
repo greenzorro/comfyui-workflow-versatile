@@ -1,8 +1,8 @@
 # comfyui-workflow-versatile
 
-A general purpose ComfyUI workflow for common use cases.
+A general purpose ComfyUI workflow for common use cases. My go-to workflow for most tasks.
 
-通用 ComfyUI 工作流程，适用于多种常见用途。
+通用 ComfyUI 工作流，适用于多种常见用途。是我应对多种任务的首选工作流。
 
 ## Download 下载
 
