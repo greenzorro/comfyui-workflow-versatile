@@ -8,6 +8,8 @@ A general purpose ComfyUI workflow for common use cases.
 
 [⏬ versatile workflow](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/versatile.json)
 
+![](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/versatile.png?raw=true)
+
 ## Usage 使用
 
 It contains advanced techniques like IPadapter, ControlNet, IC light, LLM prompt generating, removing bg and excels at **text-to-image generating, image blending, style transfer, style exploring, inpainting, outpainting, relighting**.
