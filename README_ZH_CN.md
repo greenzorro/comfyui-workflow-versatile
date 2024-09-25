@@ -2,25 +2,25 @@
 
 [🇬🇧 EN](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/README.md) | [🇨🇳 中文](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/README_ZH_CN.md)
 
-A general purpose ComfyUI workflow for common use cases. My go-to workflow for most tasks.
+通用 ComfyUI 工作流，适用于多种常见用途。是我应对多种任务的首选工作流。
 
-## Download
+## 下载
 
 [⏬ versatile workflow](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/versatile.json)
 
 ![](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/versatile.png?raw=true)
 
-## Usage
+## 使用
 
-It contains advanced techniques like IPadapter, ControlNet, IC light, LLM prompt generating, removing bg and excels at **text-to-image generating, image blending, style transfer, style exploring, inpainting, outpainting, relighting**.
+其中包含 IPadapter、ControlNet、IC light、LLM 提示词生成、背景移除等高级技术，它擅长 **文生图、图像混合、风格迁移、风格探索、局部重绘、扩图、重新打光**。
 
-With so many abilities all in one workflow, you have to understand the principle of Stable Diffusion and ComfyUI to adjust the wiring of nodes for different purposes. The default wiring set is for text-to-image generation.
+集如此多种功能于一身，因此你需要了解 Stable Diffusion 和 ComfyUI 的工作原理，才能根据不同目的调整节点的连线。默认的连线配置是文生图。
 
-Make sense of the whole workflow then you'll be able to unleash its full potential.
+理解整个工作流程后，才能充分发挥其潜力。
 
-## Prerequisite
+## 使用前提
 
-The nodes you need for my workflow:
+我的工作流所需的节点：
 
 - ComfyUI_Essentials [https://github.com/cubiq/ComfyUI_essentials.git](https://github.com/cubiq/ComfyUI_essentials.git)
 - ComfyUI-Easy-Use [https://github.com/yolain/ComfyUI-Easy-Use.git](https://github.com/yolain/ComfyUI-Easy-Use.git)
@@ -31,7 +31,7 @@ The nodes you need for my workflow:
 - ComfyUI-IC-Light [https://github.com/huchenlei/ComfyUI-IC-Light.git](https://github.com/huchenlei/ComfyUI-IC-Light.git)
 - ComfyUI-Tara-LLM-Integration [https://github.com/ronniebasak/ComfyUI-Tara-LLM-Integration.git](https://github.com/ronniebasak/ComfyUI-Tara-LLM-Integration.git)
 
-The models you need for my workflow:
+我的工作流所需的模型：
 
 **checkpoints**
 
@@ -88,6 +88,6 @@ The models you need for my workflow:
 - add-detail-xl.safetensors [https://civitai.com/api/download/models/135867?type=Model&format=SafeTensor](https://civitai.com/api/download/models/135867?type=Model&format=SafeTensor)
 
 
-## Citation
+## 感谢
 
-Special thanks to [Comflowy](https://github.com/6174/comflowy) which lead me to the wonderful world of Stable Diffusion and ComfyUI! It is a comprehensive tutorial for beginners to learn Stable Diffusion. My workflow is essentially an implementation and integration of most techniques in the tutorial.
+感谢 [Comflowy](https://github.com/6174/comflowy)，它引领我进入 Stable Diffusion 和 ComfyUI 的奇妙世界！这是一套全面的 Stable Diffusion 入门教程。我的工作流基本上就是把其中教的技巧实现并整合起来而已。
