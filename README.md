@@ -6,13 +6,21 @@ A general purpose ComfyUI workflow for common use cases. My go-to workflow for m
 
 ## Download
 
-[⏬ versatile workflow](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/versatile.json)
+- [⏬ versatile-sd](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/versatile-sd.json)
+- [⏬ versatile-pony](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/versatile-pony.json)
 
-![](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/versatile.png?raw=true)
+Example of versatile workflow for SDXL and SD1.5:
+
+![](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/versatile-sd.png?raw=true)
+
+NOTES:  
+- `versatile-sd` is the most versatile.
+- Pony diffusion is incompatible with IPadapter.
+- Workflows for Flux and SD3.5 on the way.
 
 ## Usage
 
-It contains advanced techniques like IPadapter, ControlNet, IC light, LLM prompt generating, removing bg and excels at **text-to-image generating, image blending, style transfer, style exploring, inpainting, outpainting, relighting**.
+Take `versatile-sd` as an example, it contains advanced techniques like IPadapter, ControlNet, IC light, LLM prompt generating, removing bg and excels at **text-to-image generating, image blending, style transfer, style exploring, inpainting, outpainting, relighting**.
 
 With so many abilities all in one workflow, you have to understand the principle of Stable Diffusion and ComfyUI to adjust the wiring of nodes for different purposes. The default wiring set is for text-to-image generation.
 
@@ -20,25 +28,27 @@ Make sense of the whole workflow then you'll be able to unleash its full potenti
 
 ## Prerequisite
 
-The nodes you need for my workflow:
+### Custom nodes
 
 - ComfyUI_Essentials [https://github.com/cubiq/ComfyUI_essentials.git](https://github.com/cubiq/ComfyUI_essentials.git)
 - ComfyUI-Easy-Use [https://github.com/yolain/ComfyUI-Easy-Use.git](https://github.com/yolain/ComfyUI-Easy-Use.git)
+- ComfyUI-Custom-Scripts [https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git](https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git)
+- ComfyUI_IPAdapter_plus [https://github.com/cubiq/ComfyUI_IPAdapter_plus.git](https://github.com/cubiq/ComfyUI_IPAdapter_plus.git)
 - comfyui_controlnet_aux [https://github.com/Fannovel16/comfyui_controlnet_aux.git](https://github.com/Fannovel16/comfyui_controlnet_aux.git)
 - ComfyUI-Anyline [https://github.com/TheMistoAI/ComfyUI-Anyline.git](https://github.com/TheMistoAI/ComfyUI-Anyline.git)
-- ComfyUI_IPAdapter_plus [https://github.com/cubiq/ComfyUI_IPAdapter_plus.git](https://github.com/cubiq/ComfyUI_IPAdapter_plus.git)
 - ComfyUI-layerdiffuse [https://github.com/huchenlei/ComfyUI-layerdiffuse.git](https://github.com/huchenlei/ComfyUI-layerdiffuse.git)
 - ComfyUI-IC-Light [https://github.com/huchenlei/ComfyUI-IC-Light.git](https://github.com/huchenlei/ComfyUI-IC-Light.git)
+- ComfyUI_UltimateSDUpscale [https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git](https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git) --recursive
 - ComfyUI-Tara-LLM-Integration [https://github.com/ronniebasak/ComfyUI-Tara-LLM-Integration.git](https://github.com/ronniebasak/ComfyUI-Tara-LLM-Integration.git)
 
-The models you need for my workflow:
+### Models
 
 **checkpoints**
 
 - DreamShaperXL_Lightning.safetensors [https://huggingface.co/Lykon/dreamshaper-xl-lightning/resolve/main/DreamShaperXL_Lightning.safetensors?download=true](https://huggingface.co/Lykon/dreamshaper-xl-lightning/resolve/main/DreamShaperXL_Lightning.safetensors?download=true)
-- DreamShaper_8_pruned.safetensors [https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper_8_pruned.safetensors?download=true](https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper_8_pruned.safetensors?download=true)
 - dreamshaperXL_lightningInpaint.safetensors [https://civitai.com/api/download/models/450187](https://civitai.com/api/download/models/450187)
-- dreamshaper_8Inpainting.safetensors [https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper_8_INPAINTING.inpainting.safetensors?download=true](https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper_8_INPAINTING.inpainting.safetensors?download=true)
+- DreamShaper_8_pruned.safetensors [https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper_8_pruned.safetensors?download=true](https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper_8_pruned.safetensors?download=true)
+- ponyDiffusionV6XL_v6.safetensors [https://huggingface.co/Magamanny/Pony-Diffusion-V6-XL/resolve/main/ponyDiffusionV6XL_v6StartWithThisOne.safetensors?download=true](https://huggingface.co/Magamanny/Pony-Diffusion-V6-XL/resolve/main/ponyDiffusionV6XL_v6StartWithThisOne.safetensors?download=true)
 
 **controlnet**
 
@@ -48,21 +58,11 @@ The models you need for my workflow:
 
 **ipadapter**
 
-- ip-adapter_sd15.safetensors [https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors](https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors)
-- ip-adapter_sd15_light_v11.bin [https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_light_v11.bin](https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_light_v11.bin)
-- ip-adapter-plus_sd15.safetensors [https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors](https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors)
-- ip-adapter-plus-face_sd15.safetensors [https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus-face_sd15.safetensors](https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus-face_sd15.safetensors)
-- ip-adapter-full-face_sd15.safetensors [https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-full-face_sd15.safetensors](https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-full-face_sd15.safetensors)
-- ip-adapter_sd15_vit-G.safetensors [https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_vit-G.safetensors](https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_vit-G.safetensors)
-- ip-adapter_sdxl_vit-h.safetensors [https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl_vit-h.safetensors](https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl_vit-h.safetensors)
-- ip-adapter-plus_sdxl_vit-h.safetensors [https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus_sdxl_vit-h.safetensors](https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus_sdxl_vit-h.safetensors)
-- ip-adapter-plus-face_sdxl_vit-h.safetensors [https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus-face_sdxl_vit-h.safetensors](https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus-face_sdxl_vit-h.safetensors)
 - ip-adapter_sdxl.safetensors [https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl.safetensors](https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl.safetensors)
 
 **clip_vision**
 
 - CLIP-ViT-bigG-14-laion2B-39B-b160k.safetensors [https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/image_encoder/model.safetensors](https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/image_encoder/model.safetensors)
-- CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors [https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors](https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors)
 
 **upscale_models**
 
@@ -73,6 +73,11 @@ The models you need for my workflow:
 - negativeXL_D.safetensors [https://civitai.com/api/download/models/134583](https://civitai.com/api/download/models/134583)
 - BadDream.pt [https://civitai.com/api/download/models/77169](https://civitai.com/api/download/models/77169)
 - UnrealisticDream.pt [https://civitai.com/api/download/models/77173](https://civitai.com/api/download/models/77173)
+- zPDXL3.safetensors [https://civitai.com/api/download/models/720175?type=Model&format=SafeTensor](https://civitai.com/api/download/models/720175?type=Model&format=SafeTensor)
+- zPDXLxxx.pt [https://civitai.com/api/download/models/380277?type=Model&format=PickleTensor](https://civitai.com/api/download/models/380277?type=Model&format=PickleTensor)
+- zPDXLxxx-neg.pt [https://civitai.com/api/download/models/380277?type=Negative&format=Other](https://civitai.com/api/download/models/380277?type=Negative&format=Other)
+- zPDXLpg.pt [https://civitai.com/api/download/models/380285?type=Model&format=PickleTensor](https://civitai.com/api/download/models/380285?type=Model&format=PickleTensor)
+- zPDXLpg-neg.pt [https://civitai.com/api/download/models/380285?type=Negative&format=Other](https://civitai.com/api/download/models/380285?type=Negative&format=Other)
 
 **unet**
 
@@ -86,7 +91,12 @@ The models you need for my workflow:
 **loras**
 
 - add-detail-xl.safetensors [https://civitai.com/api/download/models/135867?type=Model&format=SafeTensor](https://civitai.com/api/download/models/135867?type=Model&format=SafeTensor)
-
+- Pony_DetailV2.0.safetensors [https://civitai.com/api/download/models/449738?type=Model&format=SafeTensor](https://civitai.com/api/download/models/449738?type=Model&format=SafeTensor)
+- Anime_Style_2_SDXL_LoRA_Pony_Diffusion_V6_XL.safetensors [https://civitai.com/api/download/models/333590?type=Model&format=SafeTensor](https://civitai.com/api/download/models/333590?type=Model&format=SafeTensor)
+- Smooth_Anime_2_Style_SDXL_LoRA_Pony_Diffusion_V6_XL.safetensors [https://civitai.com/api/download/models/333607?type=Model&format=SafeTensor](https://civitai.com/api/download/models/333607?type=Model&format=SafeTensor)
+- Anime_Summer_Days_2_Style_SDXL_LoRA_Pony_Diffusion_V6_XL.safetensors [https://civitai.com/api/download/models/372898?type=Model&format=SafeTensor](https://civitai.com/api/download/models/372898?type=Model&format=SafeTensor)
+- Watercolor_Anime_Style_LoRA_Pony_XL_v6.safetensors [https://civitai.com/api/download/models/725772?type=Model&format=SafeTensor](https://civitai.com/api/download/models/725772?type=Model&format=SafeTensor)
+- LineArt_Mono_Style_LoRA_Pony_XL_v6.safetensors [https://civitai.com/api/download/models/450029?type=Model&format=SafeTensor](https://civitai.com/api/download/models/450029?type=Model&format=SafeTensor)
 
 ## Citation
 
