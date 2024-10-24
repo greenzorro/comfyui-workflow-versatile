@@ -1173,31 +1173,6 @@
       ]
     },
     {
-      "id": 33,
-      "type": "Note",
-      "pos": {
-        "0": 2940,
-        "1": 550
-      },
-      "size": {
-        "0": 210,
-        "1": 85.8431396484375
-      },
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "## Pony Diffusion V6 XL\nsteps: 25-30\ncfg: 6-7\nsampler_name: euler_a\nscheduler: karras"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 6,
       "type": "KSampler",
       "pos": {
@@ -1347,7 +1322,7 @@
         "1": 314
       },
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1510,7 +1485,7 @@
         "1": 170
       },
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1558,7 +1533,7 @@
         "1": 146.24151611328125
       },
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1583,7 +1558,7 @@
         "1": 241.6468505859375
       },
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1867,6 +1842,31 @@
       "widgets_values": [
         "score_7, score_6, score_5, score_4. \n\n(embedding:zPDXLpg-neg:1)"
       ]
+    },
+    {
+      "id": 33,
+      "type": "Note",
+      "pos": {
+        "0": 2940,
+        "1": 550
+      },
+      "size": {
+        "0": 210,
+        "1": 85.8431396484375
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "## Pony Diffusion V6 XL\nsteps: 25-30\ncfg: 6-9\nsampler_name: euler_a\nscheduler: karras"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -2305,60 +2305,48 @@
   ],
   "groups": [
     {
-      "title": "LLM 提示词优化",
+      "title": "Model 模型",
       "bounding": [
-        423,
-        847,
-        1077,
-        786
+        713,
+        117,
+        789,
+        675
       ],
-      "color": "#b58b2a",
+      "color": "#8AA",
       "font_size": 24,
       "flags": {}
     },
     {
-      "title": "Text_prompt_edit 提示词（局部改图）",
+      "title": "Text_prompt_generate 提示词（新生成）",
       "bounding": [
-        1547,
-        1024,
+        1546,
+        119,
         493,
-        613
+        872
       ],
       "color": "#b58b2a",
       "font_size": 24,
       "flags": {}
     },
     {
-      "title": "Inpaint/Outpaint 局部改图",
+      "title": "ControlNet 图片控制",
       "bounding": [
-        2894,
-        844,
-        649,
-        739
+        909,
+        1690,
+        1129,
+        627
       ],
-      "color": "#b06634",
+      "color": "#b58b2a",
       "font_size": 24,
       "flags": {}
     },
     {
-      "title": "Generate 新生成",
+      "title": "Image_latent 图片输入",
       "bounding": [
-        2893,
-        116,
-        648,
-        573
-      ],
-      "color": "#b06634",
-      "font_size": 24,
-      "flags": {}
-    },
-    {
-      "title": "Outpaint 扩图",
-      "bounding": [
-        2087,
-        1393,
-        754,
-        470
+        2195,
+        356,
+        646,
+        468
       ],
       "color": "#A88",
       "font_size": 24,
@@ -2377,50 +2365,62 @@
       "flags": {}
     },
     {
-      "title": "Image_latent 图片输入",
+      "title": "Outpaint 扩图",
       "bounding": [
-        2195,
-        356,
-        646,
-        468
+        2087,
+        1393,
+        754,
+        470
       ],
       "color": "#A88",
       "font_size": 24,
       "flags": {}
     },
     {
-      "title": "ControlNet 图片控制",
+      "title": "Generate 新生成",
       "bounding": [
-        909,
-        1690,
-        1129,
-        627
+        2893,
+        116,
+        648,
+        573
       ],
-      "color": "#b58b2a",
+      "color": "#b06634",
       "font_size": 24,
       "flags": {}
     },
     {
-      "title": "Text_prompt_generate 提示词（新生成）",
+      "title": "Inpaint/Outpaint 局部改图",
       "bounding": [
-        1546,
-        119,
+        2894,
+        844,
+        649,
+        739
+      ],
+      "color": "#b06634",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "Text_prompt_edit 提示词（局部改图）",
+      "bounding": [
+        1547,
+        1024,
         493,
-        872
+        613
       ],
       "color": "#b58b2a",
       "font_size": 24,
       "flags": {}
     },
     {
-      "title": "Model 模型",
+      "title": "LLM 提示词优化",
       "bounding": [
-        713,
-        117,
-        789,
-        675
+        423,
+        847,
+        1077,
+        786
       ],
-      "color": "#8AA",
+      "color": "#b58b2a",
       "font_size": 24,
       "flags": {}
     }
@@ -2428,11 +2428,11 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.1948717100000003,
-      "offset": {
-        "0": 649.9091796875,
-        "1": 228.69985961914062
-      }
+      "scale": 0.505447028499296,
+      "offset": [
+        -1516.4649644180972,
+        -78.80461734701538
+      ]
     },
     "groupNodes": {}
   },
