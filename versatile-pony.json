@@ -1,6 +1,6 @@
 {
-  "last_node_id": 146,
-  "last_link_id": 321,
+  "last_node_id": 147,
+  "last_link_id": 326,
   "nodes": [
     {
       "id": 40,
@@ -496,44 +496,6 @@
       ]
     },
     {
-      "id": 117,
-      "type": "AnyLinePreprocessor",
-      "pos": {
-        "0": 1299.835205078125,
-        "1": 1804.2513427734375
-      },
-      "size": {
-        "0": 210,
-        "1": 26
-      },
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 252
-        }
-      ],
-      "outputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "links": [
-            254,
-            258
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "AnyLinePreprocessor"
-      },
-      "widgets_values": []
-    },
-    {
       "id": 124,
       "type": "TaraApiKeyLoader",
       "pos": {
@@ -701,43 +663,6 @@
       "widgets_values": []
     },
     {
-      "id": 132,
-      "type": "Reroute",
-      "pos": {
-        "0": 1916.623291015625,
-        "1": 202.3394775390625
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 36,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 275
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "CONDITIONING",
-          "links": [
-            270,
-            271
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
       "id": 127,
       "type": "CLIPTextEncode",
       "pos": {
@@ -835,39 +760,6 @@
       ]
     },
     {
-      "id": 18,
-      "type": "ControlNetLoader",
-      "pos": {
-        "0": 956.3128662109375,
-        "1": 1804.2828369140625
-      },
-      "size": {
-        "0": 315,
-        "1": 58
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "CONTROL_NET",
-          "type": "CONTROL_NET",
-          "links": [
-            16
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ControlNetLoader"
-      },
-      "widgets_values": [
-        "mistoLine_rank256.safetensors"
-      ]
-    },
-    {
       "id": 123,
       "type": "TaraPrompterAdvanced",
       "pos": {
@@ -955,80 +847,6 @@
       ]
     },
     {
-      "id": 43,
-      "type": "PreviewImage",
-      "pos": {
-        "0": 1649.85107421875,
-        "1": 1953.8204345703125
-      },
-      "size": {
-        "0": 318.27728271484375,
-        "1": 306.6005554199219
-      },
-      "flags": {},
-      "order": 20,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 258
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 12,
-      "type": "ControlNetApply",
-      "pos": {
-        "0": 1649.85107421875,
-        "1": 1803.8204345703125
-      },
-      "size": {
-        "0": 317.4000244140625,
-        "1": 98
-      },
-      "flags": {},
-      "order": 39,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "conditioning",
-          "type": "CONDITIONING",
-          "link": 271
-        },
-        {
-          "name": "control_net",
-          "type": "CONTROL_NET",
-          "link": 16
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 254
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ControlNetApply"
-      },
-      "widgets_values": [
-        0.7000000000000001
-      ]
-    },
-    {
       "id": 143,
       "type": "LoraLoader",
       "pos": {
@@ -1095,7 +913,7 @@
         "1": 98
       },
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1233,46 +1051,6 @@
       ]
     },
     {
-      "id": 137,
-      "type": "Reroute",
-      "pos": {
-        "0": 2390,
-        "1": 150
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 279
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "VAE",
-          "links": [
-            285,
-            286,
-            316,
-            317,
-            319
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
       "id": 134,
       "type": "Reroute",
       "pos": {
@@ -1322,7 +1100,7 @@
         "1": 314
       },
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1485,7 +1263,7 @@
         "1": 170
       },
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1533,7 +1311,7 @@
         "1": 146.24151611328125
       },
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1558,7 +1336,7 @@
         "1": 241.6468505859375
       },
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1765,45 +1543,6 @@
       ]
     },
     {
-      "id": 5,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 1591.623291015625,
-        "1": 538.33935546875
-      },
-      "size": {
-        "0": 400,
-        "1": 200
-      },
-      "flags": {},
-      "order": 32,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 20
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            18
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "score_7, score_6, score_5, score_4. \n\n(hands:0.9), (arms:0.7), (liquid on face:1.2), naked.\n\n3d, photo, deformed, black and white, realism, disfigured, low contrast, (worst quality:1.2), (low quality:1.2), (normal quality:1.2), (bad anatomy, bad hands:1.2), signature, watermarks, ugly, imperfect eyes, skewed eyes, unnatural face, unnatural body, error, extra limb, missing limbs, painting by bad-artist, (embedding:zPDXLpg-neg:1)"
-      ]
-    },
-    {
       "id": 58,
       "type": "CLIPTextEncode",
       "pos": {
@@ -1855,7 +1594,7 @@
         "1": 85.8431396484375
       },
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1867,6 +1606,287 @@
       ],
       "color": "#432",
       "bgcolor": "#653"
+    },
+    {
+      "id": 117,
+      "type": "AnyLinePreprocessor",
+      "pos": {
+        "0": 1299.835205078125,
+        "1": 1804.2513427734375
+      },
+      "size": {
+        "0": 210,
+        "1": 26
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 252
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            258,
+            322
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "AnyLinePreprocessor"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 18,
+      "type": "ControlNetLoader",
+      "pos": {
+        "0": 956.3128662109375,
+        "1": 1804.2828369140625
+      },
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CONTROL_NET",
+          "type": "CONTROL_NET",
+          "links": [
+            323
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ControlNetLoader"
+      },
+      "widgets_values": [
+        "mistoLine_rank256.safetensors"
+      ]
+    },
+    {
+      "id": 132,
+      "type": "Reroute",
+      "pos": {
+        "0": 1916.623291015625,
+        "1": 202.3394775390625
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 275
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "CONDITIONING",
+          "links": [
+            270,
+            324
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 5,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 1591.623291015625,
+        "1": 538.33935546875
+      },
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 20
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            18,
+            325
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "score_7, score_6, score_5, score_4. \n\n(hands:0.9), (arms:0.7), (liquid on face:1.2), naked.\n\n3d, photo, deformed, black and white, realism, disfigured, low contrast, (worst quality:1.2), (low quality:1.2), (normal quality:1.2), (bad anatomy, bad hands:1.2), signature, watermarks, ugly, imperfect eyes, skewed eyes, unnatural face, unnatural body, error, extra limb, missing limbs, painting by bad-artist, (embedding:zPDXLpg-neg:1)"
+      ]
+    },
+    {
+      "id": 137,
+      "type": "Reroute",
+      "pos": {
+        "0": 2390,
+        "1": 150
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 279
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "VAE",
+          "links": [
+            285,
+            286,
+            316,
+            317,
+            319,
+            326
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 147,
+      "type": "ControlNetApplyAdvanced",
+      "pos": {
+        "0": 1650,
+        "1": 1801
+      },
+      "size": {
+        "0": 315,
+        "1": 186
+      },
+      "flags": {},
+      "order": 39,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 324
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 325
+        },
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 323
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 322
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 326,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ControlNetApplyAdvanced"
+      },
+      "widgets_values": [
+        0.7000000000000001,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 43,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 1649,
+        "1": 2046
+      },
+      "size": {
+        "0": 318.27728271484375,
+        "1": 306.6005554199219
+      },
+      "flags": {},
+      "order": 20,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 258
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
     }
   ],
   "links": [
@@ -1901,14 +1921,6 @@
       28,
       0,
       "IMAGE"
-    ],
-    [
-      16,
-      18,
-      0,
-      12,
-      1,
-      "CONTROL_NET"
     ],
     [
       18,
@@ -2039,14 +2051,6 @@
       "IMAGE"
     ],
     [
-      254,
-      117,
-      0,
-      12,
-      2,
-      "IMAGE"
-    ],
-    [
       258,
       117,
       0,
@@ -2124,14 +2128,6 @@
       0,
       6,
       1,
-      "CONDITIONING"
-    ],
-    [
-      271,
-      132,
-      0,
-      12,
-      0,
       "CONDITIONING"
     ],
     [
@@ -2301,52 +2297,104 @@
       116,
       0,
       "MODEL"
+    ],
+    [
+      322,
+      117,
+      0,
+      147,
+      3,
+      "IMAGE"
+    ],
+    [
+      323,
+      18,
+      0,
+      147,
+      2,
+      "CONTROL_NET"
+    ],
+    [
+      324,
+      132,
+      0,
+      147,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      325,
+      5,
+      0,
+      147,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      326,
+      137,
+      0,
+      147,
+      4,
+      "VAE"
     ]
   ],
   "groups": [
     {
-      "title": "Model 模型",
+      "title": "LLM 提示词优化",
       "bounding": [
-        713,
-        117,
-        789,
-        675
+        423,
+        847,
+        1077,
+        786
       ],
-      "color": "#8AA",
+      "color": "#b58b2a",
       "font_size": 24,
       "flags": {}
     },
     {
-      "title": "Text_prompt_generate 提示词（新生成）",
+      "title": "Text_prompt_edit 提示词（局部改图）",
       "bounding": [
-        1546,
-        119,
+        1547,
+        1024,
         493,
-        872
+        613
       ],
       "color": "#b58b2a",
       "font_size": 24,
       "flags": {}
     },
     {
-      "title": "ControlNet 图片控制",
+      "title": "Inpaint/Outpaint 局部改图",
       "bounding": [
-        909,
-        1690,
-        1129,
-        627
+        2894,
+        844,
+        649,
+        739
       ],
-      "color": "#b58b2a",
+      "color": "#b06634",
       "font_size": 24,
       "flags": {}
     },
     {
-      "title": "Image_latent 图片输入",
+      "title": "Generate 新生成",
       "bounding": [
-        2195,
-        356,
-        646,
-        468
+        2893,
+        116,
+        648,
+        573
+      ],
+      "color": "#b06634",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "Outpaint 扩图",
+      "bounding": [
+        2087,
+        1393,
+        754,
+        470
       ],
       "color": "#A88",
       "font_size": 24,
@@ -2365,62 +2413,50 @@
       "flags": {}
     },
     {
-      "title": "Outpaint 扩图",
+      "title": "Image_latent 图片输入",
       "bounding": [
-        2087,
-        1393,
-        754,
-        470
+        2195,
+        356,
+        646,
+        468
       ],
       "color": "#A88",
       "font_size": 24,
       "flags": {}
     },
     {
-      "title": "Generate 新生成",
+      "title": "ControlNet 图片控制",
       "bounding": [
-        2893,
-        116,
-        648,
-        573
+        909,
+        1690,
+        1131,
+        708
       ],
-      "color": "#b06634",
+      "color": "#b58b2a",
       "font_size": 24,
       "flags": {}
     },
     {
-      "title": "Inpaint/Outpaint 局部改图",
+      "title": "Text_prompt_generate 提示词（新生成）",
       "bounding": [
-        2894,
-        844,
-        649,
-        739
-      ],
-      "color": "#b06634",
-      "font_size": 24,
-      "flags": {}
-    },
-    {
-      "title": "Text_prompt_edit 提示词（局部改图）",
-      "bounding": [
-        1547,
-        1024,
+        1546,
+        119,
         493,
-        613
+        872
       ],
       "color": "#b58b2a",
       "font_size": 24,
       "flags": {}
     },
     {
-      "title": "LLM 提示词优化",
+      "title": "Model 模型",
       "bounding": [
-        423,
-        847,
-        1077,
-        786
+        713,
+        117,
+        789,
+        675
       ],
-      "color": "#b58b2a",
+      "color": "#8AA",
       "font_size": 24,
       "flags": {}
     }
@@ -2428,11 +2464,11 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.505447028499296,
-      "offset": [
-        -1516.4649644180972,
-        -78.80461734701538
-      ]
+      "scale": 0.3138428376721004,
+      "offset": {
+        "0": -299.5708312988281,
+        "1": -356.9079284667969
+      }
     },
     "groupNodes": {}
   },
