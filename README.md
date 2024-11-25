@@ -16,7 +16,7 @@ Example of versatile workflow for SDXL and SD1.5:
 NOTES:  
 - `versatile-sd` is the most versatile.
 - Pony diffusion is incompatible with IPadapter.
-- Workflows for Flux and SD3.5 on the way.
+- Workflows for Flux on the way.
 
 ## Usage
 

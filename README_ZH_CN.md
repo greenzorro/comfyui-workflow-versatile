@@ -16,7 +16,7 @@
 注意：  
 - `versatile-sd` 能力最齐全。
 - Pony diffusion不支持IPadapter。
-- Flux和SD3.5版的工作流正在搭建中。
+- Flux的工作流正在搭建中。
 
 ## 使用
 
