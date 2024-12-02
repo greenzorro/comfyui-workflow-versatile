@@ -118,6 +118,13 @@
 | upscale_models | 4x-UltraSharp.pth | [https://huggingface.co/philz1337x/upscaler/resolve/main/4x-UltraSharp.pth?download=true](https://huggingface.co/philz1337x/upscaler/resolve/main/4x-UltraSharp.pth?download=true) |
 | rembg          | RMBG-1.4.pth      | [https://huggingface.co/briaai/RMBG-1.4/resolve/main/model.pth](https://huggingface.co/briaai/RMBG-1.4/resolve/main/model.pth)                                                     |
 
+## 运行环境
+
+除了本地运行，您还可以使用我的notebook代码在云端运行，**无需额外配置**：
+
+- [Kaggle notebook](https://www.kaggle.com/code/victorcheng42/comfyui-cloud) 免费使用
+- [Colab notebook](https://drive.google.com/file/d/1y1TeZweMvelTWZ3wBVtZuD02nLS7V8Af/view?usp=sharing) 使用更强大的 GPU（Colab付费版）
+
 ## 感谢
 
 感谢 [Comflowy](https://github.com/6174/comflowy)，它引领我进入 Stable Diffusion 和 ComfyUI 的奇妙世界！这是一套全面的 Stable Diffusion 入门教程。我的工作流基本上就是把其中教的技巧实现并整合起来而已。

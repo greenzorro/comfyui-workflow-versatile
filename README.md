@@ -118,6 +118,13 @@ Make sense of the whole workflow then you'll be able to unleash its full potenti
 | upscale_models | 4x-UltraSharp.pth | [https://huggingface.co/philz1337x/upscaler/resolve/main/4x-UltraSharp.pth?download=true](https://huggingface.co/philz1337x/upscaler/resolve/main/4x-UltraSharp.pth?download=true) |
 | rembg          | RMBG-1.4.pth      | [https://huggingface.co/briaai/RMBG-1.4/resolve/main/model.pth](https://huggingface.co/briaai/RMBG-1.4/resolve/main/model.pth)                                                     |
 
+## Where to run?
+
+Besides running locally, you may run them on the cloud **without extra configuration**, using my notebook code:
+
+- [Kaggle notebook](https://www.kaggle.com/code/victorcheng42/comfyui-cloud) for free
+- [Colab notebook](https://drive.google.com/file/d/1y1TeZweMvelTWZ3wBVtZuD02nLS7V8Af/view?usp=sharing) for more powerful GPUs (Colab paid plan needed)
+
 ## Thanks
 
 Special thanks to [Comflowy](https://github.com/6174/comflowy) which lead me to the wonderful world of Stable Diffusion and ComfyUI! It is a comprehensive tutorial for beginners to learn Stable Diffusion. My workflow is essentially an implementation and integration of most techniques in the tutorial.
