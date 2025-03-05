@@ -26,7 +26,7 @@
 
 集如此多种功能于一身，因此你需要了解 Stable Diffusion 和 ComfyUI 的工作原理，才能根据不同目的调整节点的连线。默认的连线配置是文生图。
 
-理解整个工作流程后，才能充分发挥其潜力。
+理解整个工作流后，才能充分发挥其潜力。
 
 ## 使用前提
 
@@ -124,6 +124,8 @@
 
 - [Kaggle notebook](https://www.kaggle.com/code/victorcheng42/comfyui-cloud) 免费使用
 - [Colab notebook](https://drive.google.com/file/d/1y1TeZweMvelTWZ3wBVtZuD02nLS7V8Af/view?usp=sharing) 使用更强大的 GPU（Colab付费版）
+
+其中 [Flux工作流](https://www.liblib.art/modelinfo/9896f6ce715c42599fea55b52ef76303) 和 [SD工作流](https://www.liblib.art/modelinfo/39b0c271ddc7477fa9f465b0de3c21db) 还可在Liblib上运行。
 
 ## 感谢
 
