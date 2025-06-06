@@ -128,3 +128,7 @@ Besides running locally, you may run them on the cloud **without extra configura
 ## Thanks
 
 Special thanks to [Comflowy](https://github.com/6174/comflowy) which lead me to the wonderful world of Stable Diffusion and ComfyUI! It is a comprehensive tutorial for beginners to learn Stable Diffusion. My workflow is essentially an implementation and integration of most techniques in the tutorial.
+
+---
+
+Created by [Victor_42](https://victor42.work/)

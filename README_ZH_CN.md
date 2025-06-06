@@ -130,3 +130,7 @@
 ## 感谢
 
 感谢 [Comflowy](https://github.com/6174/comflowy)，它引领我进入 Stable Diffusion 和 ComfyUI 的奇妙世界！这是一套全面的 Stable Diffusion 入门教程。我的工作流基本上就是把其中教的技巧实现并整合起来而已。
+
+---
+
+由 [Victor_42](https://victor42.work/) 创造
