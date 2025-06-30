@@ -6,6 +6,7 @@ A general purpose ComfyUI workflow for common use cases. My go-to workflow for m
 
 ## Download
 
+- [⏬ chat-edit-flux](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/chat-edit-flux.json)
 - [⏬ versatile-flux](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/versatile-flux.json)
 - [⏬ versatile-sd](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/versatile-sd.json)
 - [⏬ versatile-pony](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/versatile-pony.json)
@@ -15,6 +16,7 @@ Example of versatile workflow for SDXL and SD1.5:
 ![](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/versatile-sd.png?raw=true)
 
 Tips:  
+- `chat-edit-flux` is a basic implementation of Flux Kontext dev. Yeah, the vibe editing model, which makes most image-to-image technologies obsolete.
 - `versatile-flux` is the most versatile.
 - `versatile-sd` is also pretty versatile and great for most use cases on low RAM devices.
 - Pony diffusion is incompatible with IPadapter.
@@ -91,6 +93,7 @@ Make sense of the whole workflow then you'll be able to unleash its full potenti
 
 | Dir            | Model                               | Link                                                                                                                                                                                                                                                               |
 | -------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| unet           | flux1-kontext-dev.safetensors       | [https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev/resolve/main/flux1-kontext-dev.safetensors?download=true](https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev/resolve/main/flux1-kontext-dev.safetensors?download=true)                         |
 | unet           | flux1-dev-Q4_1.gguf                 | [https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q4_1.gguf?download=true](https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q4_1.gguf?download=true)                                                                       |
 | unet           | flux1-dev-Q6_K.gguf                 | [https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q6_K.gguf?download=true](https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q6_K.gguf?download=true)                                                                       |
 | unet           | flux1-fill-dev-fp16-Q4_0-GGUF.gguf  | [https://huggingface.co/SporkySporkness/FLUX.1-Fill-dev-GGUF/resolve/main/flux1-fill-dev-fp16-Q4_0-GGUF.gguf?download=true](https://huggingface.co/SporkySporkness/FLUX.1-Fill-dev-GGUF/resolve/main/flux1-fill-dev-fp16-Q4_0-GGUF.gguf?download=true)             |

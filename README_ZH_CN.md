@@ -6,6 +6,7 @@
 
 ## 下载
 
+- [⏬ chat-edit-flux](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/chat-edit-flux.json)
 - [⏬ versatile-flux](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/versatile-flux.json)
 - [⏬ versatile-sd](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/versatile-sd.json)
 - [⏬ versatile-pony](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/versatile-pony.json)
@@ -15,6 +16,7 @@
 ![](https://github.com/greenzorro/comfyui-workflow-versatile/blob/main/versatile-sd.png?raw=true)
 
 提示：  
+- `chat-edit-flux` 是 Flux Kontext dev 的基本用法。没错，就是那个让大多数图生图技术过时的靠嘴改图模型。
 - `versatile-flux` 能力最齐全。
 - `versatile-sd` 能力也非常齐全，适合大多数低显存的使用场景。
 - Pony diffusion不支持IPadapter。
@@ -91,6 +93,7 @@
 
 | Dir            | Model                               | Link                                                                                                                                                                                                                                                               |
 | -------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| unet           | flux1-kontext-dev.safetensors       | [https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev/resolve/main/flux1-kontext-dev.safetensors?download=true](https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev/resolve/main/flux1-kontext-dev.safetensors?download=true)                         |
 | unet           | flux1-dev-Q4_1.gguf                 | [https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q4_1.gguf?download=true](https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q4_1.gguf?download=true)                                                                       |
 | unet           | flux1-dev-Q6_K.gguf                 | [https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q6_K.gguf?download=true](https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q6_K.gguf?download=true)                                                                       |
 | unet           | flux1-fill-dev-fp16-Q4_0-GGUF.gguf  | [https://huggingface.co/SporkySporkness/FLUX.1-Fill-dev-GGUF/resolve/main/flux1-fill-dev-fp16-Q4_0-GGUF.gguf?download=true](https://huggingface.co/SporkySporkness/FLUX.1-Fill-dev-GGUF/resolve/main/flux1-fill-dev-fp16-Q4_0-GGUF.gguf?download=true)             |
