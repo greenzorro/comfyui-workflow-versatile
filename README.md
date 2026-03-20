@@ -134,4 +134,4 @@ Special thanks to [Comflowy](https://github.com/6174/comflowy) which lead me to 
 
 ---
 
-Created by [Victor_42](https://victor42.work/)
+Created by [Victor42](https://victor42.work/)
