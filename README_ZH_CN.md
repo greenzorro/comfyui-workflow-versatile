@@ -136,4 +136,4 @@
 
 ---
 
-由 [Victor_42](https://victor42.work/) 创造
+Created by [Victor42](https://victor42.work/)
